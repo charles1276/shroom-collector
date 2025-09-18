@@ -3,6 +3,8 @@ using UnityEngine.InputSystem;
 
 public class PlatformerMovement : MonoBehaviour
 {
+    [SerializeField] private Animator animator;
+
     public float moveSpeed;
     public float jumpHeight;
     public float dashSpeed;
@@ -21,12 +23,30 @@ public class PlatformerMovement : MonoBehaviour
     void Update()
     {
         rb2d.linearVelocityX = _movement;
+         if (rb2d.linearVelocityX != 0)
+        {
+            animator.SetBool("isWalking", true);
+        }
+        else
+        {
+            animator.SetBool("isWalking", false);
+        }
+
+        if (rb2d.linearVelocityY != 0)
+        {
+            animator.SetBool("isJumping", false);
+        }
+        else
+        {
+            animator.SetBool("isJumping", true);
+        }
     }
 
     public void Move(InputAction.CallbackContext ctx)
     {
         _movement = ctx.ReadValue<Vector2>().x * moveSpeed;
-    }   
+        
+    }
 
     public void Jump(InputAction.CallbackContext ctx)
     {

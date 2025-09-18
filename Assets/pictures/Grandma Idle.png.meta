@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: d42ca8c5139e1d842b225d3e357ff201
+guid: e6a5fd58095087343b8ce45f4fed91da
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6191353642884561984
-    second: bighead idle_0
+      213: 4453545720563119820
+    second: Grandma Idle_0
   - first:
-      213: -2769376925011565782
-    second: bighead idle_1
+      213: -6850625272786256553
+    second: Grandma Idle_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -129,13 +129,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bighead idle_0
+      name: Grandma Idle_0
       rect:
         serializedVersion: 2
-        x: 59
+        x: 0
         y: 319
-        width: 212
-        height: 302
+        width: 320
+        height: 312
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,20 +144,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0c38b0d3aa4e31aa0800000000000000
-      internalID: -6191353642884561984
+      spriteID: cc63029ac3c2ecd30800000000000000
+      internalID: 4453545720563119820
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bighead idle_1
+      name: Grandma Idle_1
       rect:
         serializedVersion: 2
-        x: 59
+        x: 0
         y: 0
-        width: 212
-        height: 291
+        width: 320
+        height: 281
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a23a5870c523199d0800000000000000
-      internalID: -2769376925011565782
+      spriteID: 75df24e4c90bde0a0800000000000000
+      internalID: -6850625272786256553
       vertices: []
       indices: 
       edges: []
