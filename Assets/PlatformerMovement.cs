@@ -1,18 +1,21 @@
+
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlatformerMovement : MonoBehaviour
 {
-    [SerializeField] private Animator animator;
+    [SerializeField] private Animator animator;  
 
     public float moveSpeed;
     public float jumpHeight;
     public float dashSpeed;
 
+    
     public Rigidbody2D rb2d;
 
     private float _movement;
-    
+   
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -22,23 +25,30 @@ public class PlatformerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         rb2d.linearVelocityX = _movement;
-         if (rb2d.linearVelocityX != 0)
+        if (rb2d.linearVelocityX > 0)
         {
             animator.SetBool("isWalking", true);
+        }
+        else if (rb2d.linearVelocityX < 0)
+        {
+
+            animator.SetBool("isWalkingLeft", true);
         }
         else
         {
             animator.SetBool("isWalking", false);
+
         }
 
         if (rb2d.linearVelocityY != 0)
         {
-            animator.SetBool("isJumping", false);
+            animator.SetBool("isJumping", true);
         }
         else
         {
-            animator.SetBool("isJumping", true);
+            animator.SetBool("isJumping", false);
         }
     }
 
@@ -50,11 +60,13 @@ public class PlatformerMovement : MonoBehaviour
 
     public void Jump(InputAction.CallbackContext ctx)
     {
-        if (ctx.ReadValue<float>()== 1)
+        if (ctx.ReadValue<float>() == 1)
         {
             rb2d.linearVelocityY = jumpHeight;
+
+
+
         }
-        
     }
     public void move(InputAction.CallbackContext ctx)
     {
