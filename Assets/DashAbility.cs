@@ -10,6 +10,7 @@ public class DashAbility : MonoBehaviour
     private bool canDash = true;
     private bool isDashing;
     private float dashTimer;
+   
     private Rigidbody2D rb;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -35,6 +36,7 @@ public class DashAbility : MonoBehaviour
         rb.linearVelocity = new Vector2(transform.localScale.x * dashSpeed, 0);
         yield return new WaitForSeconds(dashTime);
         rb.gravityScale = originalGravity;
+
         isDashing = false;
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;

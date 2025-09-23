@@ -12,13 +12,12 @@ public class PlatformerMovement : MonoBehaviour
 
     public float moveSpeed;
     public float jumpHeight;
-    public float dashDistance = 15f;
+    
 
     public float dashSpeed = 20f;
     public float dashTime = 0.2f;
     public float dashCooldown = 1f;
     private bool canDash = true;
-    private bool isDashing;
     private float dashTimer;
 
     private Rigidbody2D rb2d;
@@ -37,7 +36,7 @@ public class PlatformerMovement : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
         {
-            StartCoroutine(Dash());
+            Coroutine dashCoroutine = StartCoroutine(Dash());
         }
 
         rb2d.linearVelocityX = _movement;
@@ -84,7 +83,20 @@ public class PlatformerMovement : MonoBehaviour
 
         }
     }
-    
+    private IEnumerator Dash()
+    {
+        canDash = false;
+        isDashing = true;
+        float originalGravity = rb2d.gravityScale;
+        rb2d.gravityScale = 0;
+        rb2d.linearVelocity = new Vector2(transform.localScale.x * dashSpeed, 0);
+        yield return new WaitForSeconds(dashTime);
+        rb2d.gravityScale = originalGravity;
+
+        isDashing = false;
+        yield return new WaitForSeconds(dashCooldown);
+        canDash = true;
+    }
 
 }
 //linkfor dash vidieohttps://www.youtube.com/watch?v=yB6ty0Gj7tA

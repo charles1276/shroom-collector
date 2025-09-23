@@ -1,0 +1,11 @@
+diff a/Assets/Wood.png.meta b/Assets/Wood.png.meta	(rejected hunks)
+@@ -160,7 +160,8 @@
+     secondaryTextures: []
+     spriteCustomMetadata:
+       entries: []
+-    nameFileIdTable: {}
++    nameFileIdTable:
++      wood_0: 7440981132975211316
+   mipmapLimitGroupName: 
+   pSDRemoveMatte: 0
+   userData: 
