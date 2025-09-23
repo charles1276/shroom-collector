@@ -13,10 +13,15 @@ public class PlatformerMovement : MonoBehaviour
     public float moveSpeed;
     public float jumpHeight;
     public float dashDistance = 15f;
-    bool isDashing;
-    float doubleTapTime;
-    KeyCode lastKeycode;
-    public Rigidbody2D rb2d;
+
+    public float dashSpeed = 20f;
+    public float dashTime = 0.2f;
+    public float dashCooldown = 1f;
+    private bool canDash = true;
+    private bool isDashing;
+    private float dashTimer;
+
+    private Rigidbody2D rb2d;
 
     private float _movement;
 
@@ -24,12 +29,17 @@ public class PlatformerMovement : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+       rb2d = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
+        {
+            StartCoroutine(Dash());
+        }
+
         rb2d.linearVelocityX = _movement;
         if (rb2d.linearVelocityX > 0)
         {
