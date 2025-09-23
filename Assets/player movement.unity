@@ -4103,7 +4103,7 @@ MonoBehaviour:
   animator: {fileID: 1995429440}
   moveSpeed: 10
   jumpHeight: 25
-  dashSpeed: 5
+  dashDistance: 15
   rb2d: {fileID: 1995429433}
 --- !u!114 &1995429435
 MonoBehaviour:
