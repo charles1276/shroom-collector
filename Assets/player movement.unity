@@ -4054,7 +4054,6 @@ GameObject:
   - component: {fileID: 1995429433}
   - component: {fileID: 1995429439}
   - component: {fileID: 1995429440}
-  - component: {fileID: 1995429441}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -4104,6 +4103,7 @@ MonoBehaviour:
   animator: {fileID: 1995429440}
   moveSpeed: 10
   jumpHeight: 25
+  dashDistance: 15
   rb2d: {fileID: 1995429433}
 --- !u!114 &1995429435
 MonoBehaviour:
@@ -4374,18 +4374,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1995429441
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1995429432}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c30781fad6f839944a223ff78e2e2fbe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2012183883
 GameObject:
   m_ObjectHideFlags: 0

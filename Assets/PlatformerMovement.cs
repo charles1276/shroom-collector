@@ -33,7 +33,7 @@ public class PlatformerMovement : MonoBehaviour
         //dash left
         if (Input.GetKeyDown(KeyCode.A))
         {
-            if (lastKeycode == KeyCode.A && Time.time < doubleTapTime)
+            if (doubleTapTime> Time.time && lastKeycode == KeyCode.A)
             {
                 StartCoroutine(Dash(-1f));
             }
@@ -45,7 +45,7 @@ public class PlatformerMovement : MonoBehaviour
             //dash right
             if (Input.GetKeyDown(KeyCode.D))
             {
-                if (lastKeycode == KeyCode.D && Time.time < doubleTapTime)
+                if (doubleTapTime > Time.time && lastKeycode == KeyCode.D)
                 {
                     StartCoroutine(Dash(1f));     
                 }
