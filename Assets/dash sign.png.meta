@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 8b2d024d491fa0f45a6233733d12deb9
+guid: c4ce55472599f3a4b851d9ed113be6ba
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8416764067189926082
-    second: bighead dash_0
-  - first:
-      213: -104645086566874707
-    second: bighead dash_1
+      213: -1354700969724503311
+    second: dash sign_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -129,35 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bighead dash_0
+      name: dash sign_0
       rect:
         serializedVersion: 2
-        x: 59
-        y: 319
-        width: 212
-        height: 302
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2c8a02f335a5ec470800000000000000
-      internalID: 8416764067189926082
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: bighead dash_1
-      rect:
-        serializedVersion: 2
-        x: 59
+        x: 3
         y: 0
-        width: 212
-        height: 301
+        width: 59
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: da101b329d93c8ef0800000000000000
-      internalID: -104645086566874707
+      spriteID: 1fa91b245a2233de0800000000000000
+      internalID: -1354700969724503311
       vertices: []
       indices: 
       edges: []
@@ -185,9 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      bighead dash_0: 8416764067189926082
-      bighead dash_1: -104645086566874707
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

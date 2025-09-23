@@ -210,7 +210,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bighead get mush_0: -922946175988452010
+      bighead get mush_1: -6700464586355775328
+      bighead get mush_2: 205080623897836842
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

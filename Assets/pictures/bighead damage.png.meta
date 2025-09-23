@@ -310,7 +310,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bighead damage_0: -5713331621306738230
+      bighead damage_1: -7299263352715754960
+      bighead damage_2: -2989947859994691681
+      bighead damage_3: -4068695763863427779
+      bighead damage_4: 6583511619745339126
+      bighead damage_5: -9190613076739037976
+      bighead damage_6: 516330022013022563
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
