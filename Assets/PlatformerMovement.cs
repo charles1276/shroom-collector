@@ -18,6 +18,7 @@ public class PlatformerMovement : MonoBehaviour
     public float dashTime = 0.2f;
     public float dashCooldown = 1f;
     private bool canDash = true;
+    private bool isDashing = false;
     private float dashTimer;
 
     private Rigidbody2D rb2d;
@@ -36,6 +37,7 @@ public class PlatformerMovement : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
         {
+ 
             Coroutine dashCoroutine = StartCoroutine(Dash());
         }
 
