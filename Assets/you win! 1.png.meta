@@ -635,6 +635,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
+<<<<<<< HEAD
     nameFileIdTable:
       you win! 1_0: -2160419622137828132
       you win! 1_1: -5886204432249553008
@@ -656,6 +657,9 @@ TextureImporter:
       you win! 1_7: -1275224896474028976
       you win! 1_8: -7695699318199854004
       you win! 1_9: 5271726680222487729
+=======
+    nameFileIdTable: {}
+>>>>>>> e666f862c075a96463af8a27e66e3364a5eee564
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -97,6 +97,8 @@ public class PlatformerMovement : MonoBehaviour
 
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;
+
+
     }
 
     // Add this method to detect landing on the ground
