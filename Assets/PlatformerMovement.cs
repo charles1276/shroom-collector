@@ -1,39 +1,42 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using Input = UnityEngine.Input;
 
 public class PlatformerMovement : MonoBehaviour
 {
     [SerializeField] private Animator animator;
-    [SerializeField] private TrailRenderer tr;
-    public float moveSpeed;
-    public float jumpHeight;
 
-    private float dashSpeed = 56f;
-    private float dashTime = 0.4f;
+    public float moveSpeed;
+    public float jumpHeight = 200.0f;
+    public float speed = 3.0f;
+    private float dashSpeed = 24f;
+    private float dashTime = 0.2f;
     private float dashCooldown = 1f;
     private bool canDash = true;
-    private bool isDashing;
-
+    private bool isDashing = false;
+    private bool grounded = true;
+    private bool canDoubleJump = true;
     private Rigidbody2D rb2d;
     private float _movement;
 
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
-        if (tr != null)
-            tr.emitting = false;
     }
 
     void Update()
     {
+        Vector3 move = Input.GetAxis("Horizontal") * transform.right * speed * Time.deltaTime;
+        transform.Translate(move);
+        if (Input.GetButtonDown("Jump"))
+        {
+            Jump();
+        }
         if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
         {
             StartCoroutine(Dash());
         }
 
-        // Only allow normal movement if not dashing
         if (!isDashing)
         {
             rb2d.linearVelocity = new Vector2(_movement, rb2d.linearVelocity.y);
@@ -54,14 +57,7 @@ public class PlatformerMovement : MonoBehaviour
             animator.SetInteger("walkdirction", 0);
         }
 
-        if (rb2d.linearVelocity.y != 0)
-        {
-            animator.SetBool("isJumping", true);
-        }
-        else
-        {
-            animator.SetBool("isJumping", false);
-        }
+        animator.SetBool("isJumping", rb2d.linearVelocity.y != 0);
     }
 
     public void Move(InputAction.CallbackContext ctx)
@@ -69,23 +65,27 @@ public class PlatformerMovement : MonoBehaviour
         _movement = ctx.ReadValue<Vector2>().x * moveSpeed;
     }
 
-    public void Jump(InputAction.CallbackContext ctx)
+    void Jump()
     {
-        if (ctx.ReadValue<float>() == 1)
+        if (grounded)
         {
             rb2d.linearVelocity = new Vector2(rb2d.linearVelocity.x, jumpHeight);
+            grounded = false;
+            canDoubleJump = true;
+        }
+        else if (canDoubleJump)
+        {
+                rb2d.linearVelocity = new Vector2(rb2d.linearVelocity.x, jumpHeight);
+            canDoubleJump = false;
         }
     }
 
-    private IEnumerator Dash()  
+    private IEnumerator Dash()
     {
         canDash = false;
         isDashing = true;
         float originalGravity = rb2d.gravityScale;
         rb2d.gravityScale = 0;
-
-        if (tr != null)
-            tr.emitting = true;
 
         float dashDir = _movement != 0 ? Mathf.Sign(_movement) : 1f;
         rb2d.linearVelocity = new Vector2(dashDir * dashSpeed, 0);
@@ -95,11 +95,17 @@ public class PlatformerMovement : MonoBehaviour
         rb2d.gravityScale = originalGravity;
         isDashing = false;
 
-        if (tr != null)
-            tr.emitting = false;
-
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;
     }
+
+    // Add this method to detect landing on the ground
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        
+        
+        grounded = true;
+        canDoubleJump = true;  
+        
+    }
 }
-//linkfor dash vidieohttps://www.youtube.com/watch?v=yB6ty0Gj7tA
