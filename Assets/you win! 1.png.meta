@@ -1,67 +1,67 @@
 fileFormatVersion: 2
-guid: e6c873d29cb93fc4e93775a4791427aa
+guid: 432dec8310557cc42b1bfedc79b8a3c6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -386557319488293661
-    second: you win!_0
+      213: -2160419622137828132
+    second: you win! 1_0
   - first:
-      213: 6452256614615561732
-    second: you win!_1
+      213: -5886204432249553008
+    second: you win! 1_1
   - first:
-      213: 1332396664407473059
-    second: you win!_2
+      213: 1907120519930147592
+    second: you win! 1_2
   - first:
-      213: 5882161073746207247
-    second: you win!_3
+      213: -5004493884050980044
+    second: you win! 1_3
   - first:
-      213: 2095379021910645647
-    second: you win!_4
+      213: -6298527168832500092
+    second: you win! 1_4
   - first:
-      213: 4845367547992262198
-    second: you win!_5
+      213: -2588822328780028045
+    second: you win! 1_5
   - first:
-      213: -1593167534660953179
-    second: you win!_6
+      213: 8857644352467708094
+    second: you win! 1_6
   - first:
-      213: -5845570464942541563
-    second: you win!_7
+      213: -1275224896474028976
+    second: you win! 1_7
   - first:
-      213: 1358791104074214530
-    second: you win!_8
+      213: -7695699318199854004
+    second: you win! 1_8
   - first:
-      213: 3447137608145455294
-    second: you win!_9
+      213: 5271726680222487729
+    second: you win! 1_9
   - first:
-      213: 2679286714645904024
-    second: you win!_10
+      213: 1289510481926117633
+    second: you win! 1_10
   - first:
-      213: 3842442008851791671
-    second: you win!_11
+      213: 3532453690262456053
+    second: you win! 1_11
   - first:
-      213: 759611256979570409
-    second: you win!_12
+      213: -3017881563627171625
+    second: you win! 1_12
   - first:
-      213: -4248222717207194332
-    second: you win!_13
+      213: 5532169741867594806
+    second: you win! 1_13
   - first:
-      213: -5227285765375149060
-    second: you win!_14
+      213: 6264142009371711229
+    second: you win! 1_14
   - first:
-      213: -8069906531452656195
-    second: you win!_15
+      213: -5278892856851049651
+    second: you win! 1_15
   - first:
-      213: -5462122570139070350
-    second: you win!_16
+      213: -4939200187966655054
+    second: you win! 1_16
   - first:
-      213: -5721543893067970791
-    second: you win!_17
+      213: 1770355260655578082
+    second: you win! 1_17
   - first:
-      213: 7010642113037232176
-    second: you win!_18
+      213: -4079678905702836476
+    second: you win! 1_18
   - first:
-      213: 1322357874850972759
-    second: you win!_19
+      213: -1279590241417407679
+    second: you win! 1_19
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -183,7 +183,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: you win!_0
+      name: you win! 1_0
       rect:
         serializedVersion: 2
         x: 22
@@ -198,14 +198,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3e4b29e7a2ca2aaf0800000000000000
-      internalID: -386557319488293661
+      spriteID: cdce0b0dcc5a402e0800000000000000
+      internalID: -2160419622137828132
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: you win!_1
+      name: you win! 1_1
       rect:
         serializedVersion: 2
         x: 28
@@ -220,14 +220,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 40633d994350b8950800000000000000
-      internalID: 6452256614615561732
+      spriteID: 09f7f6c5140005ea0800000000000000
+      internalID: -5886204432249553008
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: you win!_2
+      name: you win! 1_2
       rect:
         serializedVersion: 2
         x: 33
@@ -242,14 +242,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3ab3ce9f4bf9d7210800000000000000
-      internalID: 1332396664407473059
+      spriteID: 8037b4e2204777a10800000000000000
+      internalID: 1907120519930147592
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: you win!_3
+      name: you win! 1_3
       rect:
         serializedVersion: 2
         x: 38
@@ -264,14 +264,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f02e540e452a1a150800000000000000
-      internalID: 5882161073746207247
+      spriteID: 433c680d3577c8ab0800000000000000
+      internalID: -5004493884050980044
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: you win!_4
+      name: you win! 1_4
       rect:
         serializedVersion: 2
         x: 43
@@ -286,14 +286,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f8b1ace5e18441d10800000000000000
-      internalID: 2095379021910645647
+      spriteID: 48e879539e22798a0800000000000000
+      internalID: -6298527168832500092
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: you win!_5
+      name: you win! 1_5
       rect:
         serializedVersion: 2
         x: 50
@@ -308,14 +308,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 636c840fc143e3340800000000000000
-      internalID: 4845367547992262198
+      spriteID: 3778772eec7a21cd0800000000000000
+      internalID: -2588822328780028045
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: you win!_6
+      name: you win! 1_6
       rect:
         serializedVersion: 2
         x: 56
@@ -330,14 +330,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5ab59d4719ee3e9e0800000000000000
-      internalID: -1593167534660953179
+      spriteID: eb82597db9cacea70800000000000000
+      internalID: 8857644352467708094
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: you win!_7
+      name: you win! 1_7
       rect:
         serializedVersion: 2
         x: 61
@@ -352,14 +352,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 505b59f12ac50eea0800000000000000
-      internalID: -5845570464942541563
+      spriteID: 0546eec86bd7d4ee0800000000000000
+      internalID: -1275224896474028976
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: you win!_8
+      name: you win! 1_8
       rect:
         serializedVersion: 2
         x: 25
@@ -374,14 +374,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 28ced4a5f456bd210800000000000000
-      internalID: 1358791104074214530
+      spriteID: c4c5b706e32633590800000000000000
+      internalID: -7695699318199854004
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: you win!_9
+      name: you win! 1_9
       rect:
         serializedVersion: 2
         x: 36
@@ -396,14 +396,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eb846611461b6df20800000000000000
-      internalID: 3447137608145455294
+      spriteID: 1b45c9f1c7fe82940800000000000000
+      internalID: 5271726680222487729
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: you win!_10
+      name: you win! 1_10
       rect:
         serializedVersion: 2
         x: 44
@@ -418,14 +418,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 89a74ed421dbe2520800000000000000
-      internalID: 2679286714645904024
+      spriteID: 109595183f245e110800000000000000
+      internalID: 1289510481926117633
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: you win!_11
+      name: you win! 1_11
       rect:
         serializedVersion: 2
         x: 49
@@ -440,14 +440,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 73f36af16a8135530800000000000000
-      internalID: 3842442008851791671
+      spriteID: 5f68c916aebc50130800000000000000
+      internalID: 3532453690262456053
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: you win!_12
+      name: you win! 1_12
       rect:
         serializedVersion: 2
         x: 54
@@ -462,14 +462,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9eeb7a3e96eaa8a00800000000000000
-      internalID: 759611256979570409
+      spriteID: 7d05dc115b45e16d0800000000000000
+      internalID: -3017881563627171625
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: you win!_13
+      name: you win! 1_13
       rect:
         serializedVersion: 2
         x: 59
@@ -484,14 +484,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 425de1e52f74b05c0800000000000000
-      internalID: -4248222717207194332
+      spriteID: 634be2dc11736cc40800000000000000
+      internalID: 5532169741867594806
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: you win!_14
+      name: you win! 1_14
       rect:
         serializedVersion: 2
         x: 64
@@ -506,14 +506,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cfbbb5faa43f477b0800000000000000
-      internalID: -5227285765375149060
+      spriteID: df6d33bf7f3bee650800000000000000
+      internalID: 6264142009371711229
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: you win!_15
+      name: you win! 1_15
       rect:
         serializedVersion: 2
         x: 32
@@ -528,14 +528,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: db5e82e04cee10090800000000000000
-      internalID: -8069906531452656195
+      spriteID: d43db0c5aea9db6b0800000000000000
+      internalID: -5278892856851049651
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: you win!_16
+      name: you win! 1_16
       rect:
         serializedVersion: 2
         x: 38
@@ -550,14 +550,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 27097374674a234b0800000000000000
-      internalID: -5462122570139070350
+      spriteID: 2b574b9199f647bb0800000000000000
+      internalID: -4939200187966655054
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: you win!_17
+      name: you win! 1_17
       rect:
         serializedVersion: 2
         x: 43
@@ -572,14 +572,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 917c0eea42ef890b0800000000000000
-      internalID: -5721543893067970791
+      spriteID: 2ebae95dab0919810800000000000000
+      internalID: 1770355260655578082
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: you win!_18
+      name: you win! 1_18
       rect:
         serializedVersion: 2
         x: 50
@@ -594,14 +594,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0386afa9bddca4160800000000000000
-      internalID: 7010642113037232176
+      spriteID: 4079deb76a11267c0800000000000000
+      internalID: -4079678905702836476
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: you win!_19
+      name: you win! 1_19
       rect:
         serializedVersion: 2
         x: 60
@@ -616,8 +616,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 754ce642b75f95210800000000000000
-      internalID: 1322357874850972759
+      spriteID: 143524a747bfd3ee0800000000000000
+      internalID: -1279590241417407679
       vertices: []
       indices: 
       edges: []
@@ -635,27 +635,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      you win!_0: -386557319488293661
-      you win!_1: 6452256614615561732
-      you win!_10: 2679286714645904024
-      you win!_11: 3842442008851791671
-      you win!_12: 759611256979570409
-      you win!_13: -4248222717207194332
-      you win!_14: -5227285765375149060
-      you win!_15: -8069906531452656195
-      you win!_16: -5462122570139070350
-      you win!_17: -5721543893067970791
-      you win!_18: 7010642113037232176
-      you win!_19: 1322357874850972759
-      you win!_2: 1332396664407473059
-      you win!_3: 5882161073746207247
-      you win!_4: 2095379021910645647
-      you win!_5: 4845367547992262198
-      you win!_6: -1593167534660953179
-      you win!_7: -5845570464942541563
-      you win!_8: 1358791104074214530
-      you win!_9: 3447137608145455294
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

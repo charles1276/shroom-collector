@@ -100,6 +100,8 @@ public class PlatformerMovement : MonoBehaviour
 
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;
+
+
     }
 }
 //linkfor dash vidieohttps://www.youtube.com/watch?v=yB6ty0Gj7tA
